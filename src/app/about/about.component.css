@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Source+Code+Pro:ital@1&display=swap');
+
+.container{
+    padding-left: 2rem;
+}
+
+.profile-container{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.profile-image-container{
+    flex:1;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    flex:2;
+    padding-bottom: 2rem;
+}
+
+.badge-art{
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 10rem 0rem 0rem 10rem;
+    background-color: #534A4A;
+}
+
+.profile-image{
+    height: 20rem;
+    width: 20rem;
+}
+
+.name{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 7rem;
+}
+
+.tagline{
+    color:pink;
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 1rem;
+}
+
+.social-profiles-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rounded-box{
+    border-radius: 3rem;
+    background-color: #595454;
+    padding: 1.5rem;
+    height: 6rem;
+    width: 18rem;
+    margin: 2rem;
+}
+
+.rounded-box-title{
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.profile-icon{
+    font-size: 2rem;
+    color: white;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.profile-icon a{
+    text-decoration: none;
+    color: white;
+}
