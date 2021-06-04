@@ -1,7 +1,7 @@
 .rounded-box{
     border-radius: 1rem;
     background-color: #2d2d2d;
-    padding: 3rem 2rem;
+    padding: 3rem 1.7rem;
     min-height: 13rem;
     box-sizing: border-box;
 }
@@ -14,20 +14,20 @@
 .rounded-box-title{
     color: white;
     padding-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 550;
 }
 
 .rounded-box-content{
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 
 .rounded-box-heading{
     font-weight: 450;
     color: white;
-    font-size: 2.4em;
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -47,7 +47,6 @@
 
 .project-card-col-1{
     flex:2;
-    margin-right: 1rem;
     min-width: 25em;
 }
 
