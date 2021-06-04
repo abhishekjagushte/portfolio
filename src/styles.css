@@ -46,13 +46,14 @@ body {
 
 .content-heading {
   color: white;
+  margin-bottom: 3rem;
   font-family: "Raleway", sans-serif;
   font-size: 7.3rem ;
   line-height: 1.5;
 }
 
 .content {
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -91,14 +92,14 @@ body {
 
 
 .subheading2{
-  font-size: 3.4rem;
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1rem;
   color: white;
 }
 
 .subheading3{
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   line-height: 1.6;
   color: white;
   margin-bottom: 0.5rem;
@@ -106,7 +107,7 @@ body {
 
 .list li{
   list-style: upper-roman;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   color: white;
   padding-left: 1.6rem;
