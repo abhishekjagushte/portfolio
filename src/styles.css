@@ -92,14 +92,14 @@ body {
 
 
 .subheading2{
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 1rem;
   color: white;
 }
 
 .subheading3{
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 1.6;
   color: white;
   margin-bottom: 0.5rem;
@@ -107,7 +107,7 @@ body {
 
 .list li{
   list-style: upper-roman;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   color: white;
   padding-left: 1.3rem;
