@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+
+
+  menuExpanded: boolean = false;
+
+  constructor(private zone: NgZone) {
+
+  }
 
   ngOnInit(): void {
+  }
+
+  hamburgerMenuClicked(){
+    this.menuExpanded = !this.menuExpanded
+  }
+
+  destinationChanged(){
+    this.menuExpanded = false;
   }
 
 }

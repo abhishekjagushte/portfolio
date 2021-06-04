@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ExperienceComponent } from './experience/experience.component';
+import { ExperienceComponent } from './experiences/experience/experience.component';
 import { SkillsAndAchievementsComponent } from './skills-and-achievements/skills-and-achievements.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import { ProjectComponent } from './projects/project/project.component';
+import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import {MatIconModule} from '@angular/material/icon';
     AboutComponent,
     ProjectsComponent,
     ExperienceComponent,
-    SkillsAndAchievementsComponent
+    SkillsAndAchievementsComponent,
+    ProjectComponent,
+    ProjectDetailComponent,
+    ExperiencesComponent
   ],
   imports: [
     BrowserModule,

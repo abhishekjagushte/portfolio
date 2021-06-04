@@ -1,6 +1,146 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    margin: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&family=Yeon+Sung&display=swap");
+
+* {
+  margin: 0px;
+  font-size: 10px;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.nav-button {
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  background-color: teal;
+  width: 15rem;
+  display: block;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: teal;
+  padding: 1.5rem;
+}
+
+.content-heading {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 7.3rem ;
+  line-height: 1.5;
+}
+
+.content {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.content-container {
+  min-height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1140px) {
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .two-columns {
+    flex-direction: column;
+  }
+}
+
+.heading-container{
+  padding: 6em 3em;
+  background-color: #302e2e;
+}
+
+
+.subheading2{
+  font-size: 3.4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.subheading3{
+  font-size: 2.4rem;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.list li{
+  list-style: upper-roman;
+  font-size: 1.9rem;
+  line-height: 1.5;
+  color: white;
+  padding-left: 1.6rem;
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1100px) {
+  .content-heading {
+    font-size: 7.3rem
+  }
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 700px) {
+  .content-heading {
+    font-size: 5.3rem
+  }
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 550px) {
+  .content-heading {
+    font-size: 4.5rem
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content-heading {
+    font-size: 4rem
+  }
+}

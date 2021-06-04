@@ -1,12 +1,40 @@
-<div class="nav-container">
-    <ul class="nav-menu">
-        <li class="nav-menu-item"
+<ng-template #navContainer>
+    <div class="nav-container" >
+        <ul class="nav-menu">
+            <li class="nav-menu-item"
             [routerLink]="['/']"
             routerLinkActive="active"
+            (click)="destinationChanged()"
             [routerLinkActiveOptions]="{exact: true}"
+            >Me</li>
+            <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/projects']"  routerLinkActive="active">Projects</li>
+            <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/experiences']" routerLinkActive="active">Experience</li>
+            <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/skills']" routerLinkActive="active">Skills</li>
+        </ul>
+    </div>
+</ng-template>
+
+
+<div class="side-nav-container" >
+    <ul class="nav-menu">
+        <li class="nav-menu-item"
+        [routerLink]="['/']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"
         >Me</li>
         <li class="nav-menu-item" [routerLink]="['/projects']"  routerLinkActive="active">Projects</li>
-        <li class="nav-menu-item" [routerLink]="['/experience']" routerLinkActive="active">Experience</li>
+        <li class="nav-menu-item" [routerLink]="['/experiences']" routerLinkActive="active">Experience</li>
         <li class="nav-menu-item" [routerLink]="['/skills']" routerLinkActive="active">Skills</li>
     </ul>
+</div>
+
+<div *ngIf="!menuExpanded else navContainer"></div>
+
+<div *ngIf="!menuExpanded" class="hamburger-menu" (click)="hamburgerMenuClicked()">
+    <mat-icon>menu</mat-icon>
+
+</div>
+
+<div *ngIf="menuExpanded" class="hamburger-menu" (click)="hamburgerMenuClicked()">
+    <mat-icon>close</mat-icon>
 </div>
