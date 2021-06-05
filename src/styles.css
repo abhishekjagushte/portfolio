@@ -46,14 +46,14 @@ body {
 
 .content-heading {
   color: white;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   font-family: "Raleway", sans-serif;
   font-size: 7.3rem ;
   line-height: 1.5;
 }
 
 .content {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -86,7 +86,7 @@ body {
 }
 
 .heading-container{
-  padding: 6em 3em;
+  padding: 4em 3em;
   background-color: #302e2e;
 }
 
@@ -111,6 +111,7 @@ body {
   line-height: 1.5;
   color: white;
   padding-left: 1.3rem;
+  margin-left: -2rem;
 }
 
 @media screen and (max-width: 1400px) {

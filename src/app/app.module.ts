@@ -13,6 +13,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { ProjectComponent } from './projects/project/project.component';
 import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { GoogleChartComponent, GoogleChartsModule } from 'angular-google-charts'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ExperiencesComponent } from './experiences/experiences.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    GoogleChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

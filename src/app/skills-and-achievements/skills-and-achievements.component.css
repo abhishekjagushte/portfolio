@@ -1,0 +1,80 @@
+.content-container{
+    padding: 4em 2.5em 4em 2.5em;
+}
+
+.skills{
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+}
+
+.chart{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 75%;
+    height: 40rem;
+    position: relative;
+}
+
+.chart-colun-name{
+    display: block;
+    font-size: 1.7rem;
+    text-align: center;
+    color: rgb(148, 192, 192);
+}
+
+.skill-bar{
+    position: absolute;
+    bottom: 0;
+    width: 15%;
+}
+
+.skill{
+    height: 100%;
+    width: 15%;
+    display: inline-block;
+    margin: 0% 3%;
+}
+
+.chart-line{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    height: 1px;
+    margin: 0;
+    border: 0;
+    background-color: rgb(177, 177, 177); 
+}
+
+.chart-label{
+    position: absolute;
+    right: 0;
+    color: red;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px){
+    .chart{
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .chart{
+        width: 100%;
+    }
+
+    .skill{
+        margin: 0% 4%;
+    }
+
+    
+    .chart-colun-name{
+        font-size: 1rem;
+     }
+
+    .chart-label{
+        font-size: 1rem;
+    }
+}
