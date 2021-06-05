@@ -8,7 +8,7 @@ import { Experience } from 'src/app/models/experience.model';
 })
 export class ExperienceComponent implements OnInit {
 
-  @Input("experience") exp: Experience = new Experience("","",[],[])
+  @Input("experience") exp: Experience = new Experience("","","",[],[])
 
   constructor() { }
 

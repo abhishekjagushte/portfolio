@@ -5,7 +5,7 @@ import { Project } from "../models/project.model";
 export class ProjectsService{
     projects: Project[] = [
         new Project("Attendance Organizer",
-        "An intuitive attendance manager Android application for university students which gives insightful tips to 'organize' attendance",
+        "An intuitive attendance manager Android application for university students which gives insightful tips to 'organize' attendance.",
         "../../assets/ao.png",
         ["../../assets/java.webp"],
         "https://play.google.com/store/apps/details?id=com.abhishekjagushte.attendanceorganizer&hl=en&gl=US"),
