@@ -31,10 +31,10 @@
 <div *ngIf="!menuExpanded else navContainer"></div>
 
 <div *ngIf="!menuExpanded" class="hamburger-menu" (click)="hamburgerMenuClicked()">
-    <mat-icon>menu</mat-icon>
-
+    <img src="../../assets/menu.svg"  alt="">
+    
 </div>
 
 <div *ngIf="menuExpanded" class="hamburger-menu" (click)="hamburgerMenuClicked()">
-    <mat-icon>close</mat-icon>
+    <img src="../../assets/close.svg" alt="">
 </div>

@@ -9,11 +9,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experiences/experience/experience.component';
 import { SkillsAndAchievementsComponent } from './skills-and-achievements/skills-and-achievements.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon';
 import { ProjectComponent } from './projects/project/project.component';
 import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
-import { GoogleChartComponent, GoogleChartsModule } from 'angular-google-charts'
 
 @NgModule({
   declarations: [
@@ -30,9 +28,7 @@ import { GoogleChartComponent, GoogleChartsModule } from 'angular-google-charts'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    GoogleChartsModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

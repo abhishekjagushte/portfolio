@@ -58,8 +58,9 @@
 .profile-icon {
   font-size: 1rem;
   color: white;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-right: 1rem;
+  filter: invert();
 }
 
 .profile-icon a {
