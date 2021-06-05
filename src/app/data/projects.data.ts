@@ -7,13 +7,13 @@ export class ProjectsService{
         new Project("Attendance Organizer",
         "An intuitive attendance manager Android application for university students which gives insightful tips to 'organize' attendance",
         "../../assets/ao.png",
-        ["../../assets/java.png"],
+        ["../../assets/java.webp"],
         "https://play.google.com/store/apps/details?id=com.abhishekjagushte.attendanceorganizer&hl=en&gl=US"),
 
         new Project("Engage Chat Application",
         "A chat application built for Android employing the latest and Google recommended MVVM architechture and all the new Android Jetpack libraries.",
         "../../assets/chat.png",
-        ["../../assets/kotlin.jpeg",
+        ["../../assets/kotlin.webp",
         "../../assets/firebase.png"],
         "https://github.com/abhishekjagushte/Engage"),
 

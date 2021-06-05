@@ -2,6 +2,9 @@
     <h2 class="subheading2">{{exp.title}}</h2>
     <h3 class="subheading3">{{exp.organization}}</h3>
     <ul class="list">
-        <li *ngFor="let highlight of exp.highlights">{{highlight}}</li>
+        <li class="content" *ngFor="let highlight of exp.highlights">{{highlight}}</li>
     </ul>
+    <div class="horizontal-container links-container">
+        <a *ngFor="let link of exp.links" href="{{link.link}}" class="btn">{{ link.title }}</a>
+    </div>
 </div>

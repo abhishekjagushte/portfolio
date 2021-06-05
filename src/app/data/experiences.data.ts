@@ -12,7 +12,7 @@ export class ExperiencesService {
         'Successfully shifted to MVVM Application Architecture',
         'Executed transition of Android Application from a activity based approach to Android Jetpack Navigation Component based approach',
       ],
-      [{ title: 'Certificate', link: '' }]
+      [{ title: 'Certificate', link: 'https://drive.google.com/file/d/1yagmXnV3pTYF_se5BKzQZ46r_SWDU_Gs/view?usp=sharing' }]
     ),
 
     new Experience(
@@ -42,6 +42,19 @@ export class ExperiencesService {
             {title: "RRC Instagram handle", link: "https://www.instagram.com/roboticsclubrgit/"}
         ]
     ),
+
+    new Experience(
+      "Author",
+      "IJRASET",
+      [
+        "Published technical paper on Dependency Injection in Android Development",
+        "Explained Dependency Injection concept",
+        "Explained the implementation with Google's Dagger-Hilt"
+      ],
+      [
+        {title: "View Paper", link: "https://doi.org/10.22214/ijraset.2021.33608"}
+      ]
+    )
 
   ];
 }

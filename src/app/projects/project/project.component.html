@@ -5,11 +5,11 @@
       <img class="project-display-img" src="{{project.imagePath}}" alt=""/>
     </div> -->
     <div class="project-card-col-1">
-      <h2 class="rounded-box-title">{{project.title}}</h2>
-      <p class="col-1 rounded-box-content">
+      <h2 class="subheading2 rounded-box-title">{{project.title}}</h2>
+      <p class="col-1 content">
         {{project.description}}
       </p>
-      <h3 class="rounded-box-heading">Tech Stack</h3>
+      <h3 class="subheading3 rounded-box-heading">Tech Stack</h3>
       <div class="horizontal-container">
         <img  *ngFor="let iconPath of project.techStack" src="{{iconPath}}" alt="" class="tech-stack-icon">
       </div>

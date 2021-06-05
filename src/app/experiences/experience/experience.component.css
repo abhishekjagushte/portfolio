@@ -1,5 +1,29 @@
 .experience-container{
     padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 0.5rem;
+    padding-bottom: 2rem;
     border-left: 5px solid orangered;
-    margin-bottom: 8rem;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-bottom: 5rem;
+}
+
+.btn{
+    padding: 1rem 0.5rem;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid coral;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    background-color: rgb(219, 157, 116);
+    color:white;
+}
+
+.links-container{
+    margin-top: 3rem;
 }
