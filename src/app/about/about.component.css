@@ -21,7 +21,6 @@
   flex-direction: column;
   width: max-content;
 }
-
 .badge-art {
   height: 25rem;
   width: 25rem;
@@ -34,7 +33,14 @@
 .profile-image {
   height: 25rem;
   width: 25rem;
-  opacity: 1 !important;
+  opacity: 0;
+  animation: profile-image-anim 1s ease-out 0s 1 forwards;
+}
+
+@keyframes profile-image-anim {
+  100%{
+    opacity: 1;
+  }
 }
 
 .name {
