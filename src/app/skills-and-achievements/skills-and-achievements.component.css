@@ -36,6 +36,17 @@
     position: absolute;
     bottom: 0;
     width: 17%;
+    animation: 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s 1 normal forwards running graph-bar;
+}
+
+@keyframes graph-bar{
+    0%{
+        transform: scaleY(0);
+    }
+
+    100%{
+        transform: scaleY(1);
+    }
 }
 
 .skill{
