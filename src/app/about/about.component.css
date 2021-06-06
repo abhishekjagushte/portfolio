@@ -28,24 +28,6 @@
   padding: 1rem;
   border-radius: 12.5rem 12.5rem 12.5rem 12.5rem;
   background-color: var(--main-badge-color);
-  animation: badge 0.5s ease-out forwards;
-}
-
-@keyframes badge{
-  40%{
-    opacity: 0.4;
-    background-color: var(--secondary-color);
-  }
-  
-  60%{
-    opacity: 0.6;
-    background-color: var(--primary-color);
-  }
-
-  90%{
-    opacity: 1;
-    background-color: var(--main-badge-color);
-  }
 }
 
 
