@@ -165,4 +165,8 @@ body {
   .content-heading {
     font-size: 3rem
   }
+
+  *{
+    font-size: 10px;
+  }
 }
