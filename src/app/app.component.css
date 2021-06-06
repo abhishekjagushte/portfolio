@@ -1,6 +1,6 @@
 .app-container{
     flex: 1;
-    background-color: #1d1d1d;
+    background-color: var(--background-color-primary);
     padding-left: 13rem;
 }
 

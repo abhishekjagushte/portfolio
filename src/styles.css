@@ -2,9 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Suez+One&family=Yeon+Sung&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+
+:root{
+  --primary-color: #ee653b;
+  --secondary-color: rgb(227, 243, 87);
+  --background-color-primary: #1d1d1d;
+  --background-color-secondary:#252525;
+  --background-color-tertiary: #2f2e2e;
+  --main-badge-color: #4c4a4a;
+  --border-color: rgba(219, 219, 219,0.5);
+  --font-color: white;
+  --hover-level-0: #303030;
+  --hover-level-1: #404040;
+  --hover-level-2: #505050;
+}
+
 * {
   margin: 0px;
-  font-size: 10px;
+  font-size: 11px;
 }
 html,
 body {
@@ -30,10 +45,10 @@ body {
   outline: none;
   padding: 1rem;
   font-size: 2rem;
-  color: white;
-  background-color: #2d2d2d;
-  border: 2px solid rgb(226, 101, 55);
-  box-shadow: 4px 4px rgb(230, 230, 43);
+  color: var(--font-color);
+  background-color: var(--background-color-primary);
+  border: 2px solid var(--primary-color);
+  box-shadow: 4px 4px var(--secondary-color);
   width: 15rem;
   display: block;
   margin: auto;
@@ -41,13 +56,11 @@ body {
 }
 
 .nav-button:hover {
-  background-color: white;
-  color: teal;
-  padding: 1.5rem;
+  background-color: var(--background-color-tertiary);
 }
 
 .content-heading {
-  color: white;
+  color: var(--font-color);
   margin-bottom: 3rem;
   font-family: "Raleway", sans-serif;
   font-size: 7.3rem ;
@@ -57,7 +70,7 @@ body {
 .content {
   font-size: 1.5rem;
   line-height: 1.5;
-  color: white;
+  color: var(--font-color);
   font-family: "Open Sans", sans-serif;
   font-family: "Raleway", sans-serif;
 }
@@ -100,13 +113,13 @@ body {
   line-height: 1.2;
   margin-bottom: 1rem;
   font-family: "Raleway", sans-serif;
-  color: white;
+  color: var(--font-color);
 }
 
 .subheading3{
   font-size: 1.8rem;
   line-height: 1.6;
-  color: white;
+  color: var(--font-color);
   font-family: "Raleway", sans-serif;
   margin-bottom: 0.5rem;
 }
