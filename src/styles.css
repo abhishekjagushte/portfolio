@@ -10,6 +10,7 @@
   --background-color-secondary:#252525;
   --background-color-tertiary: #2f2e2e;
   --main-badge-color: #4c4a4a;
+  --font-style:  "Raleway", sans-serif;
   --border-color: rgba(219, 219, 219,0.5);
   --font-color: white;
   --hover-level-0: #303030;
@@ -27,7 +28,23 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family:  "Raleway", sans-serif, sans-serif;
+}
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar:hover{
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: var(--background-color-tertiary);
+}
+
+body::-webkit-scrollbar-thumb{
+  background: var(--primary-color);
 }
 
 .two-columns {
@@ -91,16 +108,6 @@ body {
   gap: 2rem;
 }
 
-@media (max-width: 1140px) {
-  .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .two-columns {
-    flex-direction: column;
-  }
-}
 
 .heading-container{
   padding: 3em 3em;
@@ -135,6 +142,7 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
+  
 }
 
 @media screen and (max-width: 1100px) {
@@ -142,6 +150,18 @@ body {
     font-size: 7.3rem
   }
 }
+
+@media (max-width: 1140px) {
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .two-columns {
+    flex-direction: column;
+  }
+}
+
 
 @media screen and (max-width: 900px) {
 }
@@ -165,7 +185,7 @@ body {
   .content-heading {
     font-size: 3rem
   }
-
+  
   *{
     font-size: 10px;
   }
