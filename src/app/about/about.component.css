@@ -58,6 +58,10 @@
   text-shadow: 4px 4px var(--primary-color), 5px 5px var(--secondary-color);
 }
 
+.tagline-container{
+  margin-top: 1rem;
+}
+
 .tagline {
   color: var(--secondary-color);
   font-family: "Source Code Pro", monospace;
@@ -135,6 +139,10 @@
 
   .tagline {
     text-align: center;
+  }
+
+  .horizontal-container {
+    margin-top: 2rem;
   }
 }
 
