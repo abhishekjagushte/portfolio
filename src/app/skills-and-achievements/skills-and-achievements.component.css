@@ -10,7 +10,7 @@
 }
 
 .icon-reveal {
-  animation: icon-reveal 0.2s ease 0.1s 1 forwards;
+  /* animation: icon-reveal 0.2s ease 0.1s 1 forwards; */
 }
 
 @keyframes icon-reveal {
