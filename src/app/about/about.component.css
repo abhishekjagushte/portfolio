@@ -4,7 +4,7 @@
 .profile-container {
   display: flex;
   flex-direction: column;
-  background-color: var(--background-color-tertiary);
+  background-color: var(--background-color-secondary);
 }
 
 .content-padding {
@@ -60,10 +60,11 @@
 
 .tagline-container{
   margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .tagline {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-family: "Source Code Pro", monospace;
   font-size: 1.6rem;
 
@@ -71,17 +72,6 @@
 
 .name:hover {
   text-shadow: 5px 5px var(--primary-color), 6px 6px var(--secondary-color);
-}
-
-.profile-icon {
-  font-size: 1rem;
-  filter: invert();
-}
-
-.profile-icon a {
-  text-decoration: none;
-  color: white;
-  font-size: 2.5rem;
 }
 
 
@@ -101,16 +91,21 @@
     font-size: 8.3rem;
     line-height: 1.5;
   }
-  
+
+  .center-responsive{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tagline{
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .name {
     font-size: 6.3rem;
     line-height: 1.5;
-  }
-
-  .tagline {
   }
 }
 
@@ -119,11 +114,6 @@
     font-size: 5.6rem;
     line-height: 1.5;
   }
-
-  .tagline {
-  }
-
-
 }
 
 @media screen and (max-width: 600px) {
@@ -140,10 +130,6 @@
   .tagline {
     text-align: center;
   }
-
-  .horizontal-container {
-    margin-top: 2rem;
-  }
 }
 
 @media screen and (max-width: 550px) {
@@ -151,11 +137,6 @@
     font-size: 6.5rem;
     line-height: 7rem;
   }
-
-  .tagline {
-  }
-
-  
 
   .center-responsive{
     justify-content: center;
@@ -167,7 +148,5 @@
   .name {
     font-size: 6rem;
     line-height: 7rem;
-  }
-  .tagline {
   }
 }

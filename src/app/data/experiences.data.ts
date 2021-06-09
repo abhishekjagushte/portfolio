@@ -9,9 +9,9 @@ export class ExperiencesService {
       'Naaniz',
       'May - June 2020',
       [
-        'Leading a team of 15 interns and had them trained on Firebase & MVVM Architecture.',
+        'Leading and training a team of 15 interns.',
         'Successfully shifted to MVVM Application Architecture.',
-        'Successfully migrated App navigation logic to Android Jetpack Navigation Component.',
+        'Successfully migrated navigation logic to Android Jetpack Navigation Component.',
       ],
       [{ title: 'Certificate', link: 'https://drive.google.com/file/d/1yagmXnV3pTYF_se5BKzQZ46r_SWDU_Gs/view?usp=sharing' }]
     ),
@@ -21,8 +21,8 @@ export class ExperiencesService {
         "RGIT's Robotics Club",
         '2020-2021',
         [
-            "Secured AIR 7 in Robocon 2021 Stage 1 - Documentation with score 94/100.",
-            "Leading a team of 12 programming enthusiasts for developing efficient algorithms for robots.",
+            "Secured AIR 7 in Robocon 2021 Stage 1 with score 94/100.",
+            "Leading a team of 12 programming & robotics enthusiasts.",
             "Ensuring technical superiority in the communication and control mechanism for DD Robocon 2021."
         ],
         [{title: "RRC Website", link: "https://rgitsroboticsclub.com/"},

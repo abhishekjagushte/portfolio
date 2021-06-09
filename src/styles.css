@@ -4,18 +4,20 @@
 
 
 :root{
-  --primary-color: #ee653b;
-  --secondary-color: rgb(227, 243, 87);
+  /* --primary-color: #ee653b; */
+  --primary-color: #ff0b56;
+  --secondary-color: #08fdd8;
+  /* --secondary-color: rgb(227, 243, 87); */
   --background-color-primary: #1d1d1d;
   --background-color-secondary:#252525;
-  --background-color-tertiary: #2f2e2e;
-  --main-badge-color: #4c4a4a;
+  --background-color-tertiary: #222222;
   --font-style:  "Raleway", sans-serif;
   --border-color: rgba(219, 219, 219,0.5);
   --font-color: white;
   --hover-level-0: #303030;
   --hover-level-1: #404040;
   --hover-level-2: #505050;
+  --main-badge-color: var(--hover-level-0);
 }
 
 * {
@@ -64,8 +66,8 @@ body::-webkit-scrollbar-thumb{
   font-size: 2rem;
   color: var(--font-color);
   background-color: var(--background-color-primary);
-  border: 2px solid var(--primary-color);
-  box-shadow: 4px 4px var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  box-shadow: 4px 4px var(--primary-color);
   width: 15rem;
   display: block;
   margin: auto;
@@ -73,11 +75,13 @@ body::-webkit-scrollbar-thumb{
 }
 
 .nav-button:hover {
+  border: 2px solid var(--primary-color);
+  box-shadow: 4px 4px var(--secondary-color);
   background-color: var(--background-color-tertiary);
 }
 
 .content-heading {
-  color: var(--font-color);
+  color: var(--primary-color);
   margin-bottom: 3rem;
   font-family: "Raleway", sans-serif;
   font-size: 7.3rem ;
@@ -108,6 +112,23 @@ body::-webkit-scrollbar-thumb{
   gap: 2rem;
 }
 
+.profile-icon {
+  font-size: 1rem;
+  filter: invert(93%) sepia(0%) saturate(13%) hue-rotate(52deg) brightness(95%) contrast(94%);
+  transition: filter 200ms ease;
+}
+
+.profile-icon:hover{
+  filter: invert(20%) sepia(70%) saturate(7489%) hue-rotate(334deg) brightness(100%) contrast(102%);
+}
+
+.profile-icon a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+}
+
+
 
 .heading-container{
   padding: 3em 3em;
@@ -120,7 +141,7 @@ body::-webkit-scrollbar-thumb{
   line-height: 1.2;
   margin-bottom: 1rem;
   font-family: "Raleway", sans-serif;
-  color: var(--font-color);
+  color: var(--secondary-color);
 }
 
 .subheading3{
@@ -129,6 +150,7 @@ body::-webkit-scrollbar-thumb{
   color: var(--font-color);
   font-family: "Raleway", sans-serif;
   margin-bottom: 0.5rem;
+  color: var(--primary-color);
 }
 
 .list{

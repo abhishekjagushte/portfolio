@@ -43,7 +43,7 @@
   margin-top: 8rem;
   margin-bottom: 10rem;
   width: 75%;
-  height: 40rem;
+  height: 42rem;
   position: relative;
 }
 
@@ -55,7 +55,7 @@
   margin-bottom: 1rem;
 }
 
-.chart-colun-name {
+.chart-column-name {
   display: block;
   font-size: 1.7rem;
   text-align: center;
@@ -66,8 +66,15 @@
   position: absolute;
   bottom: -100%;
   width: 100%;
-  animation: 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s 1 normal forwards running
-    graph-bar;
+  animation: 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s 1 normal forwards running graph-bar;
+}
+
+.skill:hover .chart-column-name{
+  color: var(--secondary-color);
+}
+
+.skill:hover {
+  box-shadow: 0 0 8px 0px black;
 }
 
 @keyframes graph-bar {
@@ -82,6 +89,8 @@
   display: inline-block;
   margin: 0% 3%;
   overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 2rem;
   position: relative;
 }
 
@@ -137,7 +146,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .chart {
     width: 100%;
   }
@@ -150,7 +159,7 @@
     font-size: 1.8rem;
   }
 
-  .chart-colun-name {
+  .chart-column-name {
     font-size: 1rem;
   }
 

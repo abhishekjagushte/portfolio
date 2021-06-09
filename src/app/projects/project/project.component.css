@@ -10,16 +10,19 @@
 
 .rounded-box:hover{
     background-color: var(--hover-level-0);
+    border: 1px solid var(--primary-color);
     cursor: pointer;
 }
 
 .rounded-box-title{
     padding-bottom: 1rem;
+    color: var(--secondary-color)
 }
 
 .rounded-box-heading{
     margin-top: 2rem;
     margin-bottom: 2rem;
+    color: var(--primary-color)
 }
 
 

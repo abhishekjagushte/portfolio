@@ -1,5 +1,11 @@
 <ng-template #navContainer>
     <div class="nav-container" >
+        <a [routerLink]="['/']" style="text-decoration: none;">
+            <div class="logo-container">
+                <h1 class="nav-logo">AJ</h1>
+                <h2 class="nav-logo-tagline" style="color: var(--primary-color);">Abhishek <span class="nav-logo-tagline" style="color: var(--secondary-color);"> Jagushte</span></h2>
+            </div>
+        </a>
         <ul class="nav-menu">
             <li class="nav-menu-item"
             [routerLink]="['/']"
@@ -11,11 +17,24 @@
             <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/experiences']" routerLinkActive="active">Experience</li>
             <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/skills']" routerLinkActive="active">Skills</li>
         </ul>
+        <div class="social-icons-container">
+            <a class="link-icon" href="mailto:abhishekjagushte@gmail.com"><img src="../../assets/mail.svg" alt="" class="profile-icon"></a>
+            <a class="link-icon" href="https://drive.google.com/file/d/1ifZ1__nMWhbJyg-ZS53I_wKpCsLsPMAQ/view?usp=sharing"><img src="../../assets/resume.svg" alt="" class="profile-icon"></a>
+            <a class="link-icon" href="https://www.linkedin.com/in/abhishekjagushte/"><img src="../../assets/linkedin.svg" alt="" class="profile-icon"></a>
+            <a class="link-icon" href="https://github.com/abhishekjagushte"><img src="../../assets/github.svg" alt="" class="profile-icon"></a>
+            <a class="link-icon" href="https://www.instagram.com/abhishekjagushte/"><img src="../../assets/instagram.svg" alt="" class="profile-icon"></a>
+          </div>
     </div>
 </ng-template>
 
 
 <div class="side-nav-container" >
+    <a [routerLink]="['/']" style="text-decoration: none;">
+        <div class="logo-container">
+            <h1 class="nav-logo">AJ</h1>
+            <h2 class="nav-logo-tagline" style="color: var(--primary-color);">Abhishek <span class="nav-logo-tagline" style="color: var(--secondary-color);"> Jagushte</span></h2>
+        </div>
+    </a>
     <ul class="nav-menu">
         <li class="nav-menu-item transition-background"
         [routerLink]="['/']"
@@ -26,6 +45,13 @@
         <li class="nav-menu-item transition-background" [routerLink]="['/experiences']" routerLinkActive="active">Experience</li>
         <li class="nav-menu-item transition-background" [routerLink]="['/skills']" routerLinkActive="active">Skills</li>
     </ul>
+    <div class="social-icons-container">
+        <a class="link-icon" href="mailto:abhishekjagushte@gmail.com"><img src="../../assets/mail.svg" alt="" class="profile-icon"></a>
+        <a class="link-icon" href="https://drive.google.com/file/d/1ifZ1__nMWhbJyg-ZS53I_wKpCsLsPMAQ/view?usp=sharing"><img src="../../assets/resume.svg" alt="" class="profile-icon"></a>
+        <a class="link-icon" href="https://www.linkedin.com/in/abhishekjagushte/"><img src="../../assets/linkedin.svg" alt="" class="profile-icon"></a>
+        <a class="link-icon" href="https://github.com/abhishekjagushte"><img src="../../assets/github.svg" alt="" class="profile-icon"></a>
+        <a class="link-icon" href="https://www.instagram.com/abhishekjagushte/"><img src="../../assets/instagram.svg" alt="" class="profile-icon"></a>
+      </div>
 </div>
 
 <div *ngIf="!menuExpanded else navContainer"></div>
