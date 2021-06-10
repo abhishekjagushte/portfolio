@@ -16,6 +16,7 @@
             <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/projects']"  routerLinkActive="active">Projects</li>
             <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/experiences']" routerLinkActive="active">Experience</li>
             <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/skills']" routerLinkActive="active">Skills</li>
+            <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/contact']" routerLinkActive="active">Contact Me</li>
         </ul>
         <div class="social-icons-container">
             <a class="link-icon" href="mailto:abhishekjagushte@gmail.com"><img src="../../assets/mail.svg" alt="" class="profile-icon"></a>
@@ -23,7 +24,7 @@
             <a class="link-icon" href="https://www.linkedin.com/in/abhishekjagushte/"><img src="../../assets/linkedin.svg" alt="" class="profile-icon"></a>
             <a class="link-icon" href="https://github.com/abhishekjagushte"><img src="../../assets/github.svg" alt="" class="profile-icon"></a>
             <a class="link-icon" href="https://www.instagram.com/abhishekjagushte/"><img src="../../assets/instagram.svg" alt="" class="profile-icon"></a>
-          </div>
+        </div>
     </div>
 </ng-template>
 
@@ -44,6 +45,7 @@
         <li class="nav-menu-item transition-background" [routerLink]="['/projects']"  routerLinkActive="active">Projects</li>
         <li class="nav-menu-item transition-background" [routerLink]="['/experiences']" routerLinkActive="active">Experience</li>
         <li class="nav-menu-item transition-background" [routerLink]="['/skills']" routerLinkActive="active">Skills</li>
+        <li class="nav-menu-item transition-background" (click)="destinationChanged()" [routerLink]="['/contact']" routerLinkActive="active">Contact Me</li>
     </ul>
     <div class="social-icons-container">
         <a class="link-icon" href="mailto:abhishekjagushte@gmail.com"><img src="../../assets/mail.svg" alt="" class="profile-icon"></a>
@@ -51,7 +53,7 @@
         <a class="link-icon" href="https://www.linkedin.com/in/abhishekjagushte/"><img src="../../assets/linkedin.svg" alt="" class="profile-icon"></a>
         <a class="link-icon" href="https://github.com/abhishekjagushte"><img src="../../assets/github.svg" alt="" class="profile-icon"></a>
         <a class="link-icon" href="https://www.instagram.com/abhishekjagushte/"><img src="../../assets/instagram.svg" alt="" class="profile-icon"></a>
-      </div>
+    </div>
 </div>
 
 <div *ngIf="!menuExpanded else navContainer"></div>
