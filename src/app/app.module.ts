@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectComponent } from './projects/project/project.component';
 import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ExperiencesComponent } from './experiences/experiences.component';
     SkillsAndAchievementsComponent,
     ProjectComponent,
     ProjectDetailComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
