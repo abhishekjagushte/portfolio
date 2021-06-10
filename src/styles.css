@@ -191,6 +191,10 @@ body::-webkit-scrollbar-thumb{
 
 
 @media screen and (max-width: 900px) {
+  .heading-container{
+    padding: 1.5em 1.5em;
+    /* background-color: #302e2e; */
+  }
 }
 
 @media screen and (max-width: 700px) {
