@@ -11,7 +11,7 @@ export class ProjectsService{
         "https://play.google.com/store/apps/details?id=com.abhishekjagushte.attendanceorganizer&hl=en&gl=US"),
 
         new Project("Engage Chat Application",
-        "A chat application built for Android employing the latest and Google recommended MVVM architechture and all the new Android Jetpack libraries.",
+        "A chat application built for Android employing the latest MVVM architechture and all the new Android Jetpack libraries.",
         "../../assets/chat.png",
         ["../../assets/kotlin.webp",
         "../../assets/firebase.png"],
@@ -25,7 +25,7 @@ export class ProjectsService{
         "https://github.com/abhishekjagushte/Piction-Photo-Editor"),
 
         new Project("Website for RGIT's Robotics Club",
-        "The official website of RGIT's Robotics Club. This website is designed to notify students about the events conducted by RRC and carry out registrations smoothly.",
+        "The official website of RGIT's Robotics Club. This website is used to notify & register students for the events conducted by RRC.",
         "../../assets/robotics.png",
         ["../../assets/wordpress.webp"],
         "https://www.rgitsroboticsclub.com/")

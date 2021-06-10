@@ -8,9 +8,10 @@
   --primary-color: #ff0b56;
   --secondary-color: #08fdd8;
   /* --secondary-color: rgb(227, 243, 87); */
+  --background-color-dark: #222222;
   --background-color-primary: #1d1d1d;
   --background-color-secondary:#252525;
-  --background-color-tertiary: #222222;
+  --background-color-tertiary:#292929;
   --font-style:  "Raleway", sans-serif;
   --border-color: rgba(219, 219, 219,0.5);
   --font-color: white;
