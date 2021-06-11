@@ -74,6 +74,11 @@ textarea.ng-invalid.ng-touched{
     width: 49%;
 }
 
+.link{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 
 input:focus{
     border: 1px solid var(--secondary-color);
@@ -87,7 +92,7 @@ textarea:focus{
 .form-box{
     width: 50%;
     position: relative;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 1300px) {
