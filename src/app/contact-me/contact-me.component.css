@@ -17,8 +17,10 @@
     transition: border 300ms ease-out;
 }
 
-.button:hover{
-    border: 2px solid var(--secondary-color)
+.button:disabled{
+    border: 1px solid gray;
+    background-color: gray;
+    cursor: not-allowed;
 }
 
 
@@ -37,6 +39,15 @@
     border: 1px solid var(--border-color);
     transition: border 300ms ease-out;
 }
+
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+textarea.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
 
 .col{
     width: 49%;

@@ -14,6 +14,8 @@ import { ProjectDetailComponent } from './projects/project-detail/project-detail
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
