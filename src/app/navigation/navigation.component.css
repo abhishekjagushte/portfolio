@@ -71,7 +71,7 @@
   position: fixed;
   right: 2.5em;
   top: 2.5em;
-  filter: invert();
+  filter: invert(90%) sepia(69%) saturate(5880%) hue-rotate(90deg) brightness(96%) contrast(108%);
   display: none;
   z-index: 10;
 }
