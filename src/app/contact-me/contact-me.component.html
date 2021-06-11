@@ -52,8 +52,13 @@
       ></textarea>
       <button id="submit" type="submit" class="button" [disabled]="!f.valid">Send</button>
 
+      <p *ngIf="status==success" class="content" class="content status-message" id="success-msg">Thanks for you message, I will reach you out soon!</p>
+      <p *ngIf="status==failure" class="content" class="content status-message" id="failure-msg">There was an error</p>
+      <p *ngIf="status==loading" class="content" class="content status-message" id="loading-msg">Please Wait...</p>
     </form>
   </div>
+
+
   <button class="nav-button transition-background" [routerLink]="['/']">
     Profile
   </button>

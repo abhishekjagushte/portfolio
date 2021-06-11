@@ -24,6 +24,27 @@
 }
 
 
+.status-message{
+    display: block;
+    margin-top: 3rem;
+    text-align: left;
+    color: white;
+    border-radius: 1rem;
+}
+
+#success-msg{
+    background-color: green;
+}
+
+#failure-msg{
+    background-color: red;
+}
+
+
+#loading-msg{
+    background-color: gray;
+}
+
 .input{
     display: inline-block;
     flex: 1;
@@ -83,6 +104,10 @@ textarea:focus{
     .button{
         margin-left: auto;
         margin-right: 0;
+    }
+
+    .status-message{
+        text-align: center;
     }
 
     .content-container{
