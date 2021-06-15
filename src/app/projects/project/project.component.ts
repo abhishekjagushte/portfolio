@@ -8,7 +8,7 @@ import { Project } from 'src/app/models/project.model';
 })
 export class ProjectComponent implements OnInit {
 
-  @Input("project") project: Project = new Project('','','', [],"")
+  @Input("project") project: Project = new Project('','',{path: "", desc: ""}, [],"")
 
   constructor() { }
 

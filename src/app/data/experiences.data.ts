@@ -5,6 +5,18 @@ import { Experience } from '../models/experience.model';
 export class ExperiencesService {
   experiences = [
     new Experience(
+      'Software Engineer',
+      'Zeus Systems Pvt Ltd',
+      'June 2021 - present',
+      [
+        "Working with Web technologies!"
+      ],
+      [
+        {title: "Company Website", link: "https://zeuslearning.com"}
+      ]
+    ),
+
+    new Experience(
       'Android Develpment Team Lead',
       'Naaniz',
       'May - June 2020',

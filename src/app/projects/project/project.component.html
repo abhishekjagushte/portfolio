@@ -11,7 +11,10 @@
       </p>
       <h3 class="subheading3 rounded-box-heading">Tech Stack</h3>
       <div class="horizontal-container">
-        <img  *ngFor="let iconPath of project.techStack" src="{{iconPath}}" alt="" class="tech-stack-icon">
+        <div  *ngFor="let icon of project.techStack" class="tooltip">
+          <img  src="{{icon.path}}" alt="{{icon.desc}}" class="tech-stack-icon">
+          <span class="tooltiptext">{{icon.desc}}</span>
+        </div>
       </div>
     </div>
   </div>
