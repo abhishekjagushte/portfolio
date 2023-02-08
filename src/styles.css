@@ -132,7 +132,7 @@ body::-webkit-scrollbar-thumb{
 
 
 .heading-container{
-  padding: 3em 3em;
+  padding: 3em 10vh 3em 10vh;
   /* background-color: #302e2e; */
 }
 

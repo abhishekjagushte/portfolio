@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartType } from 'angular-google-charts';
+import { SkillsService } from '../data/skills.service';
+import { BarGraph } from '../models/graphs/bar-graph.model';
 
 @Component({
   selector: 'app-skills-and-achievements',
@@ -8,7 +10,12 @@ import { ChartType } from 'angular-google-charts';
 })
 export class SkillsAndAchievementsComponent implements OnInit {
 
-  constructor() { }
+
+  barGraphs!: BarGraph[]
+
+  constructor(private skillsService: SkillsService) {
+    this.barGraphs = [this.skillsService.technologies, this.skillsService.languages]
+  }
 
   techIcons = [
     {path: "../../assets/MySQL.webp", name: "MySQL"},

@@ -1,0 +1,15 @@
+<h2 class="subheading2">{{ barGraph.title }}</h2>
+
+<div class="chart">
+    <hr class="chart-line" style="bottom: 0%" />    
+    <hr *ngFor="let level of barGraph.metrics" class="chart-line" [style.bottom.%]="level.level"/>
+    <label *ngFor="let level of barGraph.metrics" class="chart-label" [style.bottom.%]="level.level">{{ level.title }}</label>
+
+    <div class="skills">
+        <div *ngFor="let item of barGraph.items" class="skill">
+            <img class="bar-col-icon icon-reveal" src="{{ item.image }}" alt="">
+            <label class="chart-column-name">{{ item.title }}</label>
+            <div class="skill-bar" [style.height.%]="item.measure" [style.background-color]="item.color"></div>
+        </div>
+    </div>
+</div>

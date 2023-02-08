@@ -1,43 +1,55 @@
-.side-nav-container {
+.desktop-nav-container {
   display: flex;
+  box-sizing: border-box;
   position: fixed;
-  left: 0;
   top: 0;
-  width: 13rem;
-  flex-direction: column;
+  padding: 0rem var(--content-padding);
+  width: 100%;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-style: var(--font-style);
-  height: 100vh;
+  height: 10vh;
+  z-index: 3;
   box-shadow: 0 0 15px 0px #000;
   background-color: var(--background-color-dark);
 }
 
-.logo-container{
+.logo-container-desktop {
+  height: 100%;
+  display: flex;
+  padding: 2em;
+  align-items: center;
+}
+
+.logo-container-desktop h1 {
+  vertical-align: middle;
+}
+
+.logo-container {
   height: 12rem;
   margin-bottom: 3rem;
 }
 
-.nav-logo{
-  font-size: 8rem;
+.nav-logo {
+  font-size: 5rem;
   text-align: center;
   color: var(--font-color);
   text-shadow: 6px 6px var(--primary-color), 8px 8px var(--secondary-color);
 }
 
-
-.nav-logo-tagline{
+.nav-logo-tagline {
   color: var(--font-color);
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
-.social-icons-container{
+.social-icons-container {
   margin-top: 5rem;
   margin-bottom: 3rem;
   display: flex;
   flex-wrap: wrap;
-  gap:1.5rem;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -50,6 +62,26 @@
   align-items: center;
 }
 
+.nav-menu-desktop {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-menu-item-desktop {
+  list-style: none;
+  margin: auto;
+  color: var(--primary-color);
+  padding: 0rem 3rem;
+  font-size: 1.6rem;
+  opacity: 1;
+  vertical-align: middle;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
 .nav-menu-item {
   list-style: none;
   display: block;
@@ -58,6 +90,7 @@
   padding: 6px 0px 6px 0px;
   font-size: 1.6rem;
   opacity: 1;
+  cursor: pointer;
 }
 
 .active {
@@ -71,7 +104,8 @@
   position: fixed;
   right: 2.5em;
   top: 2.5em;
-  filter: invert(90%) sepia(69%) saturate(5880%) hue-rotate(90deg) brightness(96%) contrast(108%);
+  filter: invert(90%) sepia(69%) saturate(5880%) hue-rotate(90deg)
+    brightness(96%) contrast(108%);
   display: none;
   z-index: 10;
 }
@@ -93,27 +127,27 @@
     opacity: 1;
     animation: nav-menu 0.4s ease-out 0s 1 forwards;
   }
-  
+
   @keyframes nav-menu {
-    100%{
-      top:0;
+    100% {
+      top: 0;
     }
   }
 
-  .nav-menu-item{
-      font-size: 2.4em;
-      line-height: 1.5;
+  .nav-menu-item {
+    font-size: 2.4em;
+    line-height: 1.5;
   }
 
-  .nav-menu{
+  .nav-menu {
     padding: 0px;
   }
 
   .hamburger-menu {
     display: block;
   }
-  
-  .side-nav-container{
+
+  .desktop-nav-container {
     display: none;
   }
 }

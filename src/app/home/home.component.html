@@ -1,0 +1,54 @@
+<div class="content-container">
+  <section class="profile-container content-padding center-responsive">
+    <div class="header">
+      <div class="profile-image-container center-responsive">
+        <div class="badge-art">
+          <img
+          src="../../assets/mypic1600.webp"
+          srcset="../../assets/mypic375.webp 400w, ../../assets/mypic768.webp 768w, ../../assets/mypic1600.webp 1600w"
+          sizes="(max-width:375px) 375px, (max-width:768px) 768px, (max-width:1440px) 1600px, 1600px" 
+          alt="Image of {{ name }} {{ surname }}"
+          class="profile-image"
+          />
+        </div>
+      </div>
+
+      <div class="verticle-divider"></div>
+
+      <div class="info-container">
+        <div class="name-container">
+          <h1 class="name-heading name">{{ name }}</h1>
+          <h1 class="name-heading surname"> {{ surname }}</h1>
+        </div>
+        <div class="tagline-container">
+          <p class="tagline">{{ tagline }}</p>
+        </div>
+        <br>
+        <div class="horizontal-container center-responsive">
+          <a class="link-icon" href="{{email}}"><img src="../../assets/mail.svg" alt="Email us by clicking here" class="profile-icon"></a>
+          <a class="link-icon" target="_blank" href="{{resume}}"><img src="../../assets/resume.svg" alt="View our brochure by clicking here" class="profile-icon"></a>
+          <a class="link-icon" target="_blank" href="{{linkedIn}}"><img src="../../assets/linkedin.svg" alt="Visit our linkedin page by clicking here" class="profile-icon"></a>
+          <a class="link-icon" target="_blank" href="{{instagram}}"><img src="../../assets/instagram.svg" alt="Visit our instagram handle by clicking here" class="profile-icon"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="content-padding" *ngFor="let simpleSec of simpleSections">
+    <h1 class="subheading2">{{simpleSec.title}}</h1>
+    <br>
+    <div class="two-columns" *ngFor="let desc of simpleSec.description">
+      <div class="col-1">
+        <p class="content">
+          {{desc}}
+        </p>
+        <br>
+      </div>
+    </div>
+  </section>
+
+  <button class="nav-button transition-background" [routerLink]="['/projects']">Projects</button>
+  <br><br><br><br>
+
+</div>

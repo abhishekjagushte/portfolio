@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experiences/experience/experience.component';
 import { SkillsAndAchievementsComponent } from './skills-and-achievements/skills-and-achievements.component';
@@ -16,12 +16,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { BarGraphComponent } from './components/bar-graph/bar-graph.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    AboutComponent,
+    HomeComponent,
     ProjectsComponent,
     ExperienceComponent,
     SkillsAndAchievementsComponent,
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     ProjectDetailComponent,
     ExperiencesComponent,
     PageNotFoundComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    BarGraphComponent
   ],
   imports: [
     BrowserModule,
