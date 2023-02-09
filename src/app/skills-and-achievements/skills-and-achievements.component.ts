@@ -14,7 +14,7 @@ export class SkillsAndAchievementsComponent implements OnInit {
   barGraphs!: BarGraph[]
 
   constructor(private skillsService: SkillsService) {
-    this.barGraphs = [this.skillsService.technologies, this.skillsService.languages]
+    this.barGraphs = [this.skillsService.technologies, this.skillsService.dbTechnologies, this.skillsService.languages]
   }
 
   techIcons = [
