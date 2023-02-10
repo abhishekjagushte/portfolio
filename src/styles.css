@@ -5,12 +5,14 @@
 
 :root{
   /* --primary-color: #ee653b; */
-  --primary-color: #ff0b56;
-  --secondary-color: #08fdd8;
+  /* --primary-color: #ff0b56;
+  --secondary-color: #08fdd8; */
+  --primary-color: #f06718;
+  --secondary-color: #2acec0;
   /* --secondary-color: rgb(227, 243, 87); */
   --background-color-dark: #222222;
-  --background-color-primary: #1d1d1d;
-  --background-color-secondary:#252525;
+  --background-color-primary: #1f1f1f;
+  --background-color-secondary:#272727;
   --background-color-tertiary:#292929;
   --font-style:  "Raleway", sans-serif;
   --border-color: rgba(219, 219, 219,0.5);

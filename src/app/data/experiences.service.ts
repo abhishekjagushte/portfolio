@@ -9,7 +9,11 @@ export class ExperiencesService {
       'Zeus Systems Pvt Ltd',
       'June 2021 - present',
       [
-        "Working with Web technologies!"
+        `Working on serverless Space Reservations Application for companies returning back to office. 
+        With PostgreSQL driving the data, typescript express at helm for backend and driven by AWS at its heart. Used my major 
+        banking giants like Morgan Stanley, HSBC to serve over 50000+ employees.`,
+        `Working on REST API Integrations to facilitate one-campus-application experience for major LMS(s) - Canvas and Blackboard.`,
+        `Working with international team of esteemed software developers to deliver software commitments in a timely and agile method!`
       ],
       [
         {title: "Company Website", link: "https://zeuslearning.com"}

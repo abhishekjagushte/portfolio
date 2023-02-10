@@ -104,8 +104,7 @@
   position: fixed;
   right: 2.5em;
   top: 2.5em;
-  filter: invert(90%) sepia(69%) saturate(5880%) hue-rotate(90deg)
-    brightness(96%) contrast(108%);
+  filter: invert(65%) sepia(64%) saturate(470%) hue-rotate(125deg) brightness(92%) contrast(91%);
   display: none;
   z-index: 10;
 }

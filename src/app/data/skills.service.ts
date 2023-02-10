@@ -15,10 +15,10 @@ export class SkillsService {
       { title: "Exp.", level: 100 }
     ],
     [ 
-      { title: "Android", measure: 75, image: "assets/android.webp", color: "#32de84" },
-      { title: "NodeJS", measure: 90, image: "assets/nodejs.webp", color: "#76bb76" },
-      { title: "Angular", measure: 73, image: "assets/angular.png", color: "#d45050" },
-      { title: "Firebase", measure: 65, image: "assets/firebase.png", color: "#ffa500"}
+      { title: "Android", measure: 80, image: "assets/android.webp", color: "#32de84" },
+      { title: "NodeJS", measure: 100, image: "assets/nodejs.webp", color: "#76bb76" },
+      { title: "Angular", measure: 70, image: "assets/angular.png", color: "#d45050" },
+      { title: "React", measure: 55, image: "assets/reactjs.png", color: "#61dbfb" },
     ]
   )
 
@@ -31,10 +31,10 @@ export class SkillsService {
       { title: "Exp.", level: 100 }
     ],
     [ 
-      { title: "PostgreSQL", measure: 75, image: "assets/android.webp", color: "#32de84" },
-      { title: "MySQL", measure: 65, image: "assets/nodejs.webp", color: "#76bb76" },
-      { title: "Firbase", measure: 60, image: "assets/angular.png", color: "#d45050" },
-      { title: "MongoDB", measure: 55, image: "assets/firebase.png", color: "#ffa500"}
+      { title: "PostgreSQL", measure: 95, image: "assets/postgreSQL.png", color: "#32de84" },
+      { title: "Firbase", measure: 70, image: "assets/firebase.png", color: "#d45050" },
+      { title: "MySQL", measure: 80, image: "assets/mySQL.png", color: "#5383a1" },
+      { title: "MongoDB", measure: 55, image: "assets/mongodb.webp", color: "#4caf54"}
     ]
   )
 
@@ -54,6 +54,19 @@ export class SkillsService {
       { title: "C/C++", measure: 60, image: "assets/c.webp", color: "#5248d4"}
     ]
   )
+
+  public otherTechnologies = [
+    {img: "assets/javascript.webp", name: "JavaScript"},
+    {img: "assets/wordpress.webp", name: "Wordpress"},
+    {img: "assets/Git.webp", name: "Git"},
+    {img: "assets/expressjs.png", name: "Express"}
+  ]
+
+  public barGraphs = [
+    this.technologies,
+    this.dbTechnologies,
+    this.languages
+  ]
 
   constructor() { }
 }
