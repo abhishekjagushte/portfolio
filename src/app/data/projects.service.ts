@@ -24,11 +24,11 @@ export class ProjectsService{
         {path: "../../assets/opencv.png", desc: "OpenCV Image Processing on Python"}],
         "https://github.com/abhishekjagushte/Piction-Photo-Editor"),
 
-        new Project("Website for RGIT's Robotics Club",
-        "The official website of RGIT's Robotics Club. This website is used to notify & register students for the events conducted by RRC.",
-        {path: "../../assets/robotics.png", desc: "RGIT's Robotics Club Logo"},
-        [{path: "../../assets/wordpress.webp", desc: "Wordpress"}],
-        "https://www.rgitsroboticsclub.com/")
+        // new Project("Website for RGIT's Robotics Club",
+        // "The official website of RGIT's Robotics Club. This website is used to notify & register students for the events conducted by RRC.",
+        // {path: "../../assets/robotics.png", desc: "RGIT's Robotics Club Logo"},
+        // [{path: "../../assets/wordpress.webp", desc: "Wordpress"}],
+        // "https://www.rgitsroboticsclub.com/")
     ]
 
 }
