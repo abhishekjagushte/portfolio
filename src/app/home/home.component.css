@@ -82,7 +82,7 @@
 .name-heading{
   color: white;
   font-family: "Raleway", sans-serif;
-  text-shadow: 4px 4px var(--primary-color);
+  text-shadow: 3px 3px var(--primary-color);
   display: block;
 }
 
@@ -165,6 +165,7 @@
 
   .name {
     font-size: 4.5rem;
+    text-shadow: 2px 2px var(--primary-color);
   }
 }
 
