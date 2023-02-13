@@ -13,25 +13,30 @@
         </div>
       </div>
 
-      <div class="verticle-divider"></div>
+      <div class="verticle-divider verticle-divider-large"></div>
 
-      <div class="info-container">
-        <div class="name-container">
-          <h1 class="name-heading name">{{ name }}</h1>
-          <h1 class="name-heading surname"> {{ surname }}</h1>
-        </div>
-        <div class="tagline-container">
-          <p class="tagline">{{ tagline }}</p>
-        </div>
-        <br>
-        <div class="horizontal-container center-responsive">
-          <a class="link-icon" href="{{email}}"><img src="../../assets/mail.svg" alt="Email us by clicking here" class="profile-icon"></a>
-          <a class="link-icon" target="_blank" href="{{resume}}"><img src="../../assets/resume.svg" alt="View our brochure by clicking here" class="profile-icon"></a>
-          <a class="link-icon" target="_blank" href="{{linkedIn}}"><img src="../../assets/linkedin.svg" alt="Visit our linkedin page by clicking here" class="profile-icon"></a>
-          <a class="link-icon" target="_blank" href="{{instagram}}"><img src="../../assets/instagram.svg" alt="Visit our instagram handle by clicking here" class="profile-icon"></a>
+      <div class="info-wrapper">
+        <div class="verticle-divider verticle-divider-small"></div>
+        <div class="info-container">
+          
+          <div class="name-container">
+            <p class="greetings-line">{{ greetingsLine }}</p>
+            <h1> <span class="name-heading name"> {{ name }} {{ surname }}</span></h1>
+          </div>
+          <div class="tagline-container">
+            <p class="tagline">{{ tagline }}</p>
+          </div>
+          <br>
+          <div class="horizontal-container">
+            <a class="link-icon" href="{{email}}"><img src="../../assets/mail.svg" alt="Email us by clicking here" class="profile-icon"></a>
+            <a class="link-icon" target="_blank" href="{{resume}}"><img src="../../assets/resume.svg" alt="View our brochure by clicking here" class="profile-icon"></a>
+            <a class="link-icon" target="_blank" href="{{linkedIn}}"><img src="../../assets/linkedin.svg" alt="Visit our linkedin page by clicking here" class="profile-icon"></a>
+            <a class="link-icon" target="_blank" href="{{instagram}}"><img src="../../assets/instagram.svg" alt="Visit our instagram handle by clicking here" class="profile-icon"></a>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
+
   </section>
 
 

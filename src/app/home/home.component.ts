@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   name!: string 
   surname!: string
   tagline!: string
+  greetingsLine!: string
   email!: string
   linkedIn!: string
   instagram!: string  
@@ -24,6 +25,7 @@ export class HomeComponent implements OnInit {
     this.name = this.aboutdataService.name
     this.surname = this.aboutdataService.surname
     this.tagline = this.aboutdataService.tagline
+    this.greetingsLine = this.aboutdataService.greetingsLine
     this.email = this.aboutdataService.email
     this.instagram = this.aboutdataService.instagram
     this.linkedIn = this.aboutdataService.linkedIn

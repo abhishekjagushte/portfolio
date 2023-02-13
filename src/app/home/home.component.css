@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--background-color-secondary);
+
 }
 
 .header{
@@ -14,13 +15,21 @@
   align-items: center;
   justify-content: center;
   gap: 10rem;
-  flex-wrap: wrap;
 }
 
 .verticle-divider{
-  border: 2px solid white;
+  border: 2px solid var(--secondary-color);
+}
+
+.verticle-divider-large {
   margin: 3rem 0;
-height: 300px;
+  height: 300px;
+}
+
+.verticle-divider-small {
+  margin: 0 2rem 0 0;
+  height: 100%;
+  display: none;
 }
 
 .content-padding {
@@ -34,9 +43,14 @@ height: 300px;
 
 .info-container {
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column;  
 }
+
+.info-wrapper {
+  display: flex;
+  flex-direction: row;  
+}
+
 .badge-art {
   height: 25rem;
   width: 25rem;
@@ -68,18 +82,12 @@ height: 300px;
 .name-heading{
   color: white;
   font-family: "Raleway", sans-serif;
-  text-shadow: 4px 4px var(--primary-color), 5px 5px var(--secondary-color);
+  text-shadow: 4px 4px var(--primary-color);
   display: block;
 }
 
-.name {
-  font-size: 4.5rem;
-  line-height: 1.2;
-  display: block;
-}
-
-.surname{
-  font-size: 8rem;
+.name{
+  font-size: 6rem;
   line-height: 1.5;
 }
 
@@ -90,10 +98,15 @@ height: 300px;
 
 .tagline {
   color: var(--primary-color);
-  font-family: "Source Code Pro", monospace;
+  font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
-
+  line-height: 1.4;
   max-width: 100%;
+}
+
+.greetings-line {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
 }
 
 .name:hover {
@@ -106,11 +119,8 @@ height: 300px;
 }
 
 @media screen and (max-width: 1450px) {
-  .name{
-    font-size: 3.5rem;
-  }
 
-  .surname{
+  .name{
     font-size: 5rem;
   }
 
@@ -127,30 +137,22 @@ height: 300px;
     display: none;
   }
 
+  .verticle-divider-small {
+    display: inline;
+  }
+
   .header{
     flex-direction: column;
     gap: 3.5rem;
-  }
-
-  .name, .surname{
-    text-align: center;
   }
 
   .name{
     font-size: 5rem;
   }
 
-  .surname{
-    font-size: 6rem;
-  }
-
   .center-responsive{
     justify-content: center;
     align-items: center;
-  }
-
-  .tagline{
-    text-align: center;
   }
 
 }
@@ -160,25 +162,31 @@ height: 300px;
   .content-padding{
     padding: 4em 1.5em 8em 1.5em;
   }
+
+  .name {
+    font-size: 4.5rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
+
   .name{
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
-  .surname{
-    font-size: 5.3rem;
+  .tagline{
+    font-size: 1.2rem;
+  }
+
+  .greetings-line{
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .name{
-    font-size: 3.5rem;
-  }
 
-  .surname{
-    font-size: 4.7rem;
+  .name{
+    font-size: 3.7rem;
   }
 }
 
@@ -188,14 +196,16 @@ height: 300px;
     justify-content: center;
     align-items: center;
   }
+
+  .name{
+    font-size: 3.2rem;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
-  .name{
-    font-size: 3.5rem;
-  }
 
-  .surname{
-    font-size: 4.3rem;
+  .name{
+    font-size: 3rem;
   }
 }

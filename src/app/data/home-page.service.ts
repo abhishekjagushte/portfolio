@@ -12,7 +12,9 @@ export class HomePageService {
   name: string = "Abhishek";
   surname: string = 'Jagushte';
   tagline: string =
-    "A curious coder passionate about finished products & user experience!";
+    "A curious coder passionate about finished products & user experience! Currently working as Software Engineer at Zeus Learning.";
+
+  greetingsLine: string = "Hey! I am,"
 
   email: string = 'mailto:abhishekjagushte@gmail.com';
   linkedIn: string = 'https://www.linkedin.com/in/abhishekjagushte';
