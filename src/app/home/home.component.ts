@@ -18,19 +18,21 @@ export class HomeComponent implements OnInit {
   instagram!: string  
   resume!: string
   simpleSections!:SimpleSection[];
+  connectLinks!: {img: string, link: string, alt:string}[]
 
-  constructor(private aboutdataService: HomePageService) { }
+  constructor(private homeDataService: HomePageService) { }
 
   ngOnInit(): void {
-    this.name = this.aboutdataService.name
-    this.surname = this.aboutdataService.surname
-    this.tagline = this.aboutdataService.tagline
-    this.greetingsLine = this.aboutdataService.greetingsLine
-    this.email = this.aboutdataService.email
-    this.instagram = this.aboutdataService.instagram
-    this.linkedIn = this.aboutdataService.linkedIn
-    this.resume = this.aboutdataService.resume
-    this.simpleSections=this.aboutdataService.simpleSection
+    this.name = this.homeDataService.name
+    this.surname = this.homeDataService.surname
+    this.tagline = this.homeDataService.tagline
+    this.greetingsLine = this.homeDataService.greetingsLine
+    this.email = this.homeDataService.email
+    this.instagram = this.homeDataService.instagram
+    this.linkedIn = this.homeDataService.linkedIn
+    this.resume = this.homeDataService.resume
+    this.simpleSections=this.homeDataService.simpleSection
+    this.connectLinks = this.homeDataService.connectLinks
   }
 
 }

@@ -12,16 +12,10 @@ export class NavigationComponent implements OnInit {
   initials!: string 
   name!: string 
   surname!: string
-  email: string = "mailto:rgitsroboticsclub@gmail.com"
-  linkedIn: string = "https://www.linkedin.com/in/abhishekjagushte/"
-  instagram: string = "https://www.instagram.com/abhishekjagushte/" 
-  resume: string = "https://drive.google.com/file/d/1ifZ1__nMWhbJyg-ZS53I_wKpCsLsPMAQ/view?usp=sharing"
+  connectLinks!: {img: string, link: string, alt:string}[]
 
-  constructor(private aboutData: HomePageService, private homePageService: HomePageService) {
-    this.email = this.homePageService.email
-    this.instagram = this.homePageService.instagram
-    this.linkedIn = this.homePageService.linkedIn
-    this.resume = this.homePageService.resume
+  constructor(private aboutData: HomePageService) {
+    this.connectLinks = aboutData.connectLinks
   }
 
   ngOnInit(): void {

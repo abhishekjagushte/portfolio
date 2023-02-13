@@ -28,10 +28,9 @@
           </div>
           <br>
           <div class="horizontal-container">
-            <a class="link-icon" href="{{email}}"><img src="../../assets/mail.svg" alt="Email us by clicking here" class="profile-icon"></a>
-            <a class="link-icon" target="_blank" href="{{resume}}"><img src="../../assets/resume.svg" alt="View our brochure by clicking here" class="profile-icon"></a>
-            <a class="link-icon" target="_blank" href="{{linkedIn}}"><img src="../../assets/linkedin.svg" alt="Visit our linkedin page by clicking here" class="profile-icon"></a>
-            <a class="link-icon" target="_blank" href="{{instagram}}"><img src="../../assets/instagram.svg" alt="Visit our instagram handle by clicking here" class="profile-icon"></a>
+            <ng-container *ngFor="let connectLink of connectLinks">
+              <a class="link-icon" href="{{connectLink.link}}"><img src="{{connectLink.img}}" alt="{{connectLink.alt}}" class="profile-icon"></a>
+            </ng-container>
           </div>
         </div>
       </div>

@@ -22,6 +22,35 @@ export class HomePageService {
   resume: string =
     'https://drive.google.com/file/d/1ifZ1__nMWhbJyg-ZS53I_wKpCsLsPMAQ/view?usp=sharing';
 
+  connectLinks = [
+    {
+      link: 'mailto:abhishekjagushte@gmail.com',
+      alt: 'Click here to email me',
+      img: 'assets/mail.svg'
+    },
+    {
+      link: 'https://www.linkedin.com/in/abhishekjagushte',
+      alt: 'Click here to view my LinkedIn page.',
+      img: 'assets/linkedin.svg'
+    },
+    {
+      link: 'https://www.instagram.com/abhishekjagushte/',
+      alt: 'Click here to view my Instagram page',
+      img: 'assets/instagram.svg'
+    },
+    {
+      link: 'https://drive.google.com/file/d/1ifZ1__nMWhbJyg-ZS53I_wKpCsLsPMAQ/view?usp=sharing',
+      alt: 'Download my Resume',
+      img: 'assets/resume.svg'
+    },
+    {
+      link: 'https://github.com/abhishekjagushte',
+      alt: 'CLick here to view my Github account.',
+      img: 'assets/github.svg'
+    },
+    
+  ]
+
   simpleSection: SimpleSection[] = [
     new SimpleSection(
       //title

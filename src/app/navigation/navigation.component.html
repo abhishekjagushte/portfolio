@@ -14,11 +14,9 @@
             <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/contact']" routerLinkActive="active">Contact Me</li>
         </ul>
         <div class="social-icons-container">
-            <a class="link-icon" href="{{email}}"><img src="../../assets/mail.svg" alt="Click here to email me" class="profile-icon"></a>
-            <a class="link-icon" target="_blank" href="{{ resume }}"><img src="../../assets/resume.svg" alt="Click here to view my resume" class="profile-icon"></a>
-            <a class="link-icon" target="_blank" href="{{linkedIn}}"><img src="../../assets/linkedin.svg" alt="Click here to visit my LinkedIn page" class="profile-icon"></a>
-            <a class="link-icon" target="_blank" href="https://github.com/abhishekjagushte"><img src="../../assets/github.svg" alt="Click here to visit my github account" class="profile-icon"></a>
-            <a class="link-icon" target="_blank" href="{{instagram}}"><img src="../../assets/instagram.svg" alt="Click here to visit my Instagram handle" class="profile-icon"></a>
+            <ng-container *ngFor="let connectLink of connectLinks">
+                <a class="link-icon" href="{{connectLink.link}}"><img src="{{connectLink.img}}" alt="{{connectLink.alt}}" class="profile-icon"></a>
+            </ng-container>
         </div>
     </div>
 </ng-template>
