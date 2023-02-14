@@ -31,8 +31,8 @@ export class SkillsService {
       { title: "Exp.", level: 100 }
     ],
     [ 
-      { title: "PostgreSQL", measure: 95, image: "assets/postgreSQL.png", color: "#32de84" },
-      { title: "Firbase", measure: 70, image: "assets/firebase.png", color: "#d45050" },
+      { title: "PostgreSQL", measure: 95, image: "assets/postgreSQL.png", color: "#2f6792" },
+      { title: "Firbase", measure: 70, image: "assets/firebase.png", color: "#ffa100" },
       { title: "MySQL", measure: 80, image: "assets/mySQL.png", color: "#5383a1" },
       { title: "MongoDB", measure: 55, image: "assets/mongodb.webp", color: "#4caf54"}
     ]
