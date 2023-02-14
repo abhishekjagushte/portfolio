@@ -8,8 +8,8 @@
         </a>
         <ul class="nav-menu">
             <li class="nav-menu-item" [routerLink]="['/']" routerLinkActive="active" (click)="destinationChanged()" [routerLinkActiveOptions]="{exact: true}">Home</li>
-            <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/projects']"  routerLinkActive="active">Projects</li>
             <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/experiences']"  routerLinkActive="active">Experience</li>
+            <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/projects']"  routerLinkActive="active">Projects</li>
             <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/skills']" routerLinkActive="active">Skills</li>
             <li class="nav-menu-item" (click)="destinationChanged()" [routerLink]="['/contact']" routerLinkActive="active">Contact Me</li>
         </ul>
@@ -33,8 +33,8 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="{exact: true}"
             >Home</li>
-            <li class="nav-menu-item-desktop transition-background" [routerLink]="['/projects']"  routerLinkActive="active">Projects</li>
             <li class="nav-menu-item-desktop transition-background" [routerLink]="['/experiences']"  routerLinkActive="active">Experience</li>
+            <li class="nav-menu-item-desktop transition-background" [routerLink]="['/projects']"  routerLinkActive="active">Projects</li>
             <li class="nav-menu-item-desktop transition-background" [routerLink]="['/skills']" routerLinkActive="active">Skills</li>
         <li class="nav-menu-item-desktop transition-background" (click)="destinationChanged()" [routerLink]="['/contact']" routerLinkActive="active">Contact Me</li>
     </ul>
