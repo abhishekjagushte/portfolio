@@ -16,7 +16,8 @@ export class ExperiencesService {
         `Working with international team of esteemed software developers to deliver software commitments in a timely and agile method!`
       ],
       [
-        {title: "Company Website", link: "https://zeuslearning.com"}
+        {title: "Company Website", link: "https://zeuslearning.com"},
+        {title: "LinkedIn Handle", link: "https://www.linkedin.com/company/zeus-learning/"},
       ]
     ),
 
