@@ -23,9 +23,13 @@
             <p class="greetings-line">{{ greetingsLine }}</p>
             <h1> <span class="name-heading name"> {{ name }} {{ surname }}</span></h1>
           </div>
-          <div class="tagline-container">
-            <p class="tagline">{{ tagline }}</p>
-          </div>
+            <div class="highlights-container">
+                <h2 class="highlights-item-1 highlights-text ">{{ highlights[0] }}</h2>
+              
+                <h2 class="highlights-item-2 highlights-text">{{ highlights[1] }}</h2>
+              
+                <h2 class="highlights-item-3 highlights-text">{{ highlights[2] }}</h2>
+            </div>
           <br>
           <div class="horizontal-container">
             <ng-container *ngFor="let connectLink of connectLinks">

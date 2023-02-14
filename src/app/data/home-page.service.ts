@@ -11,8 +11,6 @@ export class HomePageService {
 
   name: string = "Abhishek";
   surname: string = 'Jagushte';
-  tagline: string =
-    "A curious coder passionate about finished products & user experience! Currently working as Software Engineer at Zeus Learning.";
 
   greetingsLine: string = "Hey! I am,"
 
@@ -50,6 +48,8 @@ export class HomePageService {
     },
     
   ]
+
+  hightLights: string[] = ["Problem Solver", "Software Engineer", "Passionate Coder"]
 
   simpleSection: SimpleSection[] = [
     new SimpleSection(

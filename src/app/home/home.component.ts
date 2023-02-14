@@ -11,7 +11,6 @@ export class HomeComponent implements OnInit {
 
   name!: string 
   surname!: string
-  tagline!: string
   greetingsLine!: string
   email!: string
   linkedIn!: string
@@ -19,13 +18,13 @@ export class HomeComponent implements OnInit {
   resume!: string
   simpleSections!:SimpleSection[];
   connectLinks!: {img: string, link: string, alt:string}[]
+  highlights!: string[]
 
   constructor(private homeDataService: HomePageService) { }
 
   ngOnInit(): void {
     this.name = this.homeDataService.name
     this.surname = this.homeDataService.surname
-    this.tagline = this.homeDataService.tagline
     this.greetingsLine = this.homeDataService.greetingsLine
     this.email = this.homeDataService.email
     this.instagram = this.homeDataService.instagram
@@ -33,6 +32,7 @@ export class HomeComponent implements OnInit {
     this.resume = this.homeDataService.resume
     this.simpleSections=this.homeDataService.simpleSection
     this.connectLinks = this.homeDataService.connectLinks
+    this.highlights = this.homeDataService.hightLights
   }
 
 }

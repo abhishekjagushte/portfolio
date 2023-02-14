@@ -12,7 +12,7 @@
   /* --secondary-color: rgb(227, 243, 87); */
   --background-color-dark: #222222;
   --background-color-primary: #1f1f1f;
-  --background-color-secondary:#272727;
+  --background-color-secondary:#222222;
   --background-color-tertiary:#292929;
   --font-style:  "Raleway", sans-serif;
   --border-color: rgba(219, 219, 219,0.5);
@@ -20,7 +20,7 @@
   --hover-level-0: #303030;
   --hover-level-1: #404040;
   --hover-level-2: #505050;
-  --main-badge-color: var(--hover-level-0);
+  --main-badge-color: var(--background-color-dark);
 }
 
 * {
